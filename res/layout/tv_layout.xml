@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView_tv"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--  
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/tv_gridView0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/title_selecte_bg" 
+                        android:nextFocusDown="@+id/gridView1" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+-->
+        <!-- 央视频道 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_item_bg"
+                android:gravity="center_horizontal|center_vertical"
+               
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/tv_gridView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/item_selecte_bg"
+                        android:nextFocusDown="@+id/gridView2"
+                        android:nextFocusUp="@+id/gridView0"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- 各省卫视 -->
+<!-- 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_item_bg"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/tv_name2"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/tv_gridView2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/item_selecte_bg" 
+                        android:nextFocusDown="@+id/gridView3"
+                        android:nextFocusUp="@+id/gridView1"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+ -->
+        <!-- 数字频道 -->
+<!--  
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_item_bg"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/tv_name3"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/tv_gridView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/item_selecte_bg" 
+                        android:nextFocusDown="@+id/gridView4"
+                        android:nextFocusUp="@+id/gridView2"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+ -->
+        <!-- 地方节目 -->
+<!--  
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_item_bg"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/tv_name4"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/tv_gridView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/item_selecte_bg"
+                        android:nextFocusDown="@+id/gridView5"
+                        android:nextFocusUp="@+id/gridView3"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+-->
+        <!-- 其他 -->
+<!-- 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_item_bg"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/tv_name5"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/tv_hs5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <GridView
+                        android:id="@+id/tv_gridView5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:listSelector="@drawable/item_selecte_bg" 
+                        android:nextFocusUp="@+id/gridView4"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+     -->
+    </LinearLayout>
+ 
+</LinearLayout>

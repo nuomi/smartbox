@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dip"
+    android:background="@drawable/mydialog_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gv_dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal|top"
+        android:paddingTop="5sp" 
+        android:paddingLeft="10sp" 
+        android:paddingRight="10sp" 
+        android:textSize="22sp"/>
+    
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        />
+
+    <GridView
+        android:id="@+id/gv_dialog_submenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal|top"
+        android:horizontalSpacing="10dip"
+        android:listSelector="@drawable/gridview_item_dialog_submenu_bkg"
+        android:numColumns="3"
+        android:padding="5sp"
+        android:verticalSpacing="5dip" />
+
+</LinearLayout>

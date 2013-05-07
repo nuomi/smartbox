@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/beijing" >
+
+        <LinearLayout
+            android:id="@+id/activity_group_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="5dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+             >
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/activity_group_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:checkedButton="@+id/activity_recommend"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/activity_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_zy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_cartoon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_livetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+            <RadioButton
+                android:id="@+id/activity_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:focusableInTouchMode="true" />
+
+        </RadioGroup>
+    </FrameLayout>
+
+</LinearLayout>

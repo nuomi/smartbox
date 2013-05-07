@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10.0dip"
+    android:baselineAligned="false"
+    android:padding="5.0dip" >
+
+
+    <!-- match_parent  match_parent  android:orientation="horizontal" -->
+    <!-- 0dip" match_parent 2 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/search_input_panel"
+        android:orientation="vertical" >
+
+        <!-- 吧EditText换成TextView 
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:visibility="gone" />-->
+        <!-- match_parent  fill_parent -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_key_hint"
+            android:textColor="#d2d2d2"
+            android:paddingTop="30dip"
+            android:textSize="30sp" />
+        <!-- 1.5 match_parent fill_parent -->
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.5"
+            android:numColumns="6" 
+            >
+        </GridView>
+        <!-- android:paddingBottom="30dip"
+        android:paddingTop="30dip" -->
+    </LinearLayout>
+    <!-- 0dip  match_parent 1 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" >
+
+        <!-- wrap_content match_parent -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="3"
+                android:background="@drawable/search_result_panel" >
+            </ListView>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

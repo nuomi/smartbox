@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <!-- 播放界面 -->
+
+    <com.qipo.wedgit.CenterLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.qipo.wedgit.VideoViewTV
+            android:id="@+id/surface_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </com.qipo.wedgit.CenterLayout>
+
+    <!-- loadingView -->
+
+    <LinearLayout
+        android:id="@+id/loadingview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@+id/progressView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                style="?android:attr/progressBarStyleLarge">
+                <!--  android:indeterminateDrawable="@drawable/progress" -->
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/play_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- bottom banner -->
+
+    <LinearLayout
+        android:id="@+id/ll_bottombaner"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_banner_bg"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/iv_videoview_icon"
+            android:layout_width="220dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="15dip"
+            android:padding="10dip" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dip"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dip"
+                android:layout_weight="0.8"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_videoview_nextloadingname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_videoview_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/tv_videoview_nextloadingpresent"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|bottom"
+                android:paddingRight="20sp"
+                android:layout_weight="1.1"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
